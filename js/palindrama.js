@@ -2,31 +2,31 @@
 // Chiedere all’utente di inserire una parola
 // Creare una funzione per capire se la parola inserita è palindroma
 
-let word = prompt(`Enter a word`);
+const userWord = prompt(`Enter a word to check if it's palindrome`);
 
 // Chiamata alla funzione isPalindrome ed output 
-if (isPalindrome(word)){
-    console.log(`The word ${word} is palindrome`);
-    document.getElementById("isPalindromeOutput").innerHTML = `The word ${word} is palindrome`;
+if (isPalindrome(userWord)){
+    console.log(`The word ${userWord} is palindrome`);
+    document.getElementById("isPalindromeOutput").innerHTML = `The word ${userWord} is palindrome`;
     
 }
 else {
-    console.log(`The word ${word} is not palindrome`);
-    document.getElementById("isPalindromeOutput").innerHTML = `The word ${word} is not palindrome`;
+    console.log(`The word ${userWord} is not palindrome`);
+    document.getElementById("isPalindromeOutput").innerHTML = `The word ${userWord} is not palindrome`;
 }
 
 // Definizione della funzione isPalindrome
-function isPalindrome (x){
-
-    let j = x.length -1;
-    let palindrome = true;
-    for (let i=0; i < x.length / 2 && palindrome === true; i++){
-        if (!(x[i] === x[j])){
-            palindrome = false;
+function isPalindrome (word){
+    let wordLowerCase = word.toLowerCase();
+    
+    let lastCharacterPosition = wordLowerCase.length - 1;
+    let result = true;
+    for (let i = 0; i < wordLowerCase.length / 2; i++){
+        if (wordLowerCase[i] !== wordLowerCase[lastCharacterPosition - i]) {
+            result = false;
         }
-        j--;
     }
-    return palindrome;
+    return result;
 }
 
 
