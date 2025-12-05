@@ -4,7 +4,7 @@
 
 let word = prompt(`Enter a word`);
 
-// Chiamata alla funzione e output
+// Chiamata alla funzione isPalindrome ed output 
 if (isPalindrome(word)){
     console.log(`The word ${word} is palindrome`);
     document.getElementById("isPalindromeOutput").innerHTML = `The word ${word} is palindrome`;
@@ -15,13 +15,13 @@ else {
     document.getElementById("isPalindromeOutput").innerHTML = `The word ${word} is not palindrome`;
 }
 
-// Definizione della funzione
-function isPalindrome (word){
+// Definizione della funzione isPalindrome
+function isPalindrome (x){
 
-    let j = word.length -1;
+    let j = x.length -1;
     let palindrome = true;
-    for (let i=0; i < word.length / 2 && palindrome === true; i++){
-        if (!(word[i] === word[j])){
+    for (let i=0; i < x.length / 2 && palindrome === true; i++){
+        if (!(x[i] === x[j])){
             palindrome = false;
         }
         j--;
