@@ -4,6 +4,18 @@
 
 let word = prompt(`Enter a word`);
 
+// Chiamata alla funzione e output
+if (isPalindrome(word)){
+    console.log(`The word ${word} is palindrome`);
+    document.getElementById("isPalindromeOutput").innerHTML = `The word ${word} is palindrome`;
+    
+}
+else {
+    console.log(`The word ${word} is not palindrome`);
+    document.getElementById("isPalindromeOutput").innerHTML = `The word ${word} is not palindrome`;
+}
+
+// Definizione della funzione
 function isPalindrome (word){
 
     let j = word.length -1;
@@ -17,9 +29,4 @@ function isPalindrome (word){
     return palindrome;
 }
 
-if (isPalindrome(word)){
-    console.log(`The word ${word} is palindrome`);
-}
-else {
-    console.log(`The word ${word} is not palindrome`);
-}
+
