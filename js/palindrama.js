@@ -17,3 +17,9 @@ function isPalindrome (word){
     return palindrome;
 }
 
+if (isPalindrome(word)){
+    console.log(`The word ${word} is palindrome`);
+}
+else {
+    console.log(`The word ${word} is not palindrome`);
+}
