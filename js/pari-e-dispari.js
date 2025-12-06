@@ -4,7 +4,7 @@
 // L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
 const userEvenOrOdd = prompt (`Inserire "pari" o "dispari"`);
 const userNum = prompt (`Inserire un numero da 1 a 5`);
-console.log(userEvenOrOdd, userNum);
+console.log(`userEvenOrOdd: ${userEvenOrOdd}, userNum: ${userNum}`);
 
 
 // Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
@@ -15,6 +15,7 @@ function getRandomIntInclusive(min, max) {
 }
 
 const computerNum = getRandomIntInclusive(1, 5);
+console.log(`computerNum: ${computerNum}`);
 
 
 // Sommiamo i due numeri
