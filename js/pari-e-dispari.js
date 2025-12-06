@@ -24,7 +24,16 @@ console.log(`sum: ${sum}`);
 
 
 // Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione).
+function EvenOrOdd (num) {
+    if (num % 2 === 0){
+        return 'even';
+    }
+    else {
+        return 'odd';
+    }
+}
 
+console.log(`The sum is: ${EvenOrOdd(sum)}`);
 
 
 // // Dichiariamo chi ha vinto.
