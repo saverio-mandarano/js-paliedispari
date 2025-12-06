@@ -20,6 +20,7 @@ console.log(`computerNum: ${computerNum}`);
 
 // Sommiamo i due numeri
 const sum = userNum + computerNum;
+console.log(`sum: ${sum}`);
 
 
 // Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
