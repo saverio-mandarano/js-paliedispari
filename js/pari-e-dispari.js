@@ -3,7 +3,7 @@
 
 // L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
 const userEvenOrOdd = prompt (`Inserire "pari" o "dispari"`);
-const userNum = prompt (`Inserire un numero da 1 a 5`);
+const userNum = parseInt(prompt (`Inserire un numero da 1 a 5`));
 console.log(`userEvenOrOdd: ${userEvenOrOdd}, userNum: ${userNum}`);
 
 
@@ -23,5 +23,8 @@ const sum = userNum + computerNum;
 console.log(`sum: ${sum}`);
 
 
-// Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
+// Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione).
+
+
+
 // // Dichiariamo chi ha vinto.
