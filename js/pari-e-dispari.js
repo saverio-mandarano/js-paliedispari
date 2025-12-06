@@ -2,7 +2,7 @@
 
 
 // L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
-const userEvenOrOdd = prompt (`Inserire "pari" o "dispari"`);
+const userEvenOrOdd = prompt (`Insert "even" or "odd"`);
 const userNum = parseInt(prompt (`Inserire un numero da 1 a 5`));
 console.log(`userEvenOrOdd: ${userEvenOrOdd}, userNum: ${userNum}`);
 
@@ -36,4 +36,10 @@ function EvenOrOdd (num) {
 console.log(`The sum is: ${EvenOrOdd(sum)}`);
 
 
-// // Dichiariamo chi ha vinto.
+// Dichiariamo chi ha vinto.
+if (userEvenOrOdd === EvenOrOdd(sum)){
+    console.log(`Well Done!!! You win !!!!!!!!`)
+}
+else {
+    console.log(`You Lost!`)
+}
