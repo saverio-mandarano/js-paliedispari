@@ -3,11 +3,17 @@
 
 // L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
 let userEvenOrOdd;
-while(userEvenOrOdd !== `even` && userEvenOrOdd !== `odd`){
+do{
     userEvenOrOdd = prompt (`Insert "even" or "odd"`);
 }
+while(userEvenOrOdd !== `even` && userEvenOrOdd !== `odd`);
 
-const userNum = parseInt(prompt (`Inserire un numero da 1 a 5`));
+let userNum;
+do {
+    userNum = parseInt(prompt (`Inserire un numero da 1 a 5`));
+}
+while(userNum < 1 || userNum > 5);
+
 console.log(`userEvenOrOdd: ${userEvenOrOdd}, userNum: ${userNum}`);
 
 
